@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: Bubble;
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("/assets/BubbleBobble-rg3rx.ttf") format("opentype");
+}
+@theme {
+  --font-mont: "Montserrat", serif;
+  --font-bubble: "Bubble", serif;
+  --color-main: #f4f4f5;
+  --color-main-dark: #374151;
+}
+
+@plugin "@tailwindcss/typography";
+
+@import "tailwindcss";

@@ -1,0 +1,254 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="./output.css" rel="stylesheet" />
+
+    <script
+      src="https://kit.fontawesome.com/5f4a5ea002.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="font-mont bg-main dark:bg-main-dark box-border dark:text-white">
+    <header class="fixed z-10 w-full px-12 pt-8">
+      <div
+        class="flex h-8 items-center justify-between rounded-full bg-slate-300 pr-4 dark:bg-gray-500"
+      >
+        <img
+          src="https://img.freepik.com/premium-vector/ps-logo-design_705304-1083.jpg"
+          alt="logo_img"
+          class="w-16 animate-spin rounded-full object-contain transition-transform duration-300 hover:scale-110"
+        />
+
+        <div>
+          <div class="hidden space-x-3 sm:flex" id="navbar" type="button">
+            <nav
+              class="cursor-pointer transition-colors delay-75 duration-300 ease-in-out hover:text-white/80"
+            >
+              <a href="#home">Home</a>
+            </nav>
+            <nav
+              class="cursor-pointer transition-colors delay-75 duration-300 ease-in-out hover:text-white/80"
+            >
+              <a href="#about">About me</a>
+            </nav>
+            <nav
+              class="cursor-pointer transition-colors delay-75 duration-300 ease-in-out hover:text-white/80"
+            >
+              <a href="#projects">Projects</a>
+            </nav>
+            <nav
+              class="cursor-pointer transition-colors delay-75 duration-300 ease-in-out hover:text-white/80"
+            >
+              Contact
+            </nav>
+          </div>
+        </div>
+        <div class="sm:hidden"><i class="fa-solid fa-bars"></i></div>
+      </div>
+    </header>
+
+    <section
+      id="home"
+      class="flex h-screen w-full flex-col items-center justify-center space-y-1.5 bg-[url(/assets/light-hero.jpg)] bg-cover max-sm:bg-right dark:bg-[url(/assets/dark-hero.jpg)]"
+    >
+      <h1>Hi, I am PANKAJ SEHRAWAT</h1>
+      <p class="italic">- Web Developer</p>
+      <button
+        class="btn group relative cursor-pointer overflow-hidden rounded-4xl bg-slate-300 px-4 py-2 text-sm"
+      >
+        <a href="#projects">
+          <span
+            class="absolute inset-0 origin-left scale-x-0 bg-gray-400 transition-transform delay-75 duration-300 ease-out group-hover:scale-x-100"
+          ></span>
+          <span
+            class="relative text-black transition-colors delay-75 duration-300 group-hover:text-white/80"
+            >View My Work</span
+          >
+        </a>
+      </button>
+    </section>
+
+    <section class="p-6" id="about">
+      <h1 class="my-4 font-serif text-4xl antialiased">About Me</h1>
+      <div class="flex flex-col justify-evenly lg:flex-row">
+        <div class="relative w-full space-y-2 lg:w-1/2">
+          <p class="text-justify">
+            Hi, I recently graduated from The NorthCap University, Gurugram in
+            <strong>BTech CSE</strong>.
+          </p>
+          <p class="font-bubble text-center text-6xl tracking-wider uppercase">
+            skills
+          </p>
+          <div class="border-2 border-b-0 border-gray-300 p-2">
+            <div
+              class="flex flex-col items-center border-1 border-b-0 border-gray-300 p-2 sm:flex-row sm:justify-between lg:justify-around"
+            >
+              <img
+                src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png"
+                alt="html_logo"
+                class="h-20"
+              />
+
+              <img
+                src="https://1000logos.net/wp-content/uploads/2020/09/CSS-Logo-2011.png"
+                alt="css_logo"
+                class="h-20"
+              />
+              <img
+                src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png"
+                alt="js-logo"
+                class="mt-2 h-20"
+              />
+              <img
+                src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.d52e9897.svg"
+                alt="js-logo"
+                class="mt-4 ml-5 h-16"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-8 flex w-full items-center justify-center lg:mt-0 lg:w-1/4"
+        >
+          <img
+            src="assets/profile.jpg"
+            class="h-55 w-44 rotate-12 rounded-lg object-contain duration-500 hover:rotate-0 hover:transition-transform"
+            alt="profile-pic"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="p-6" id="projects">
+      <h1 class="my-4 font-serif text-4xl antialiased">Projects</h1>
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+        <div
+          class="rounded-md pb-2 shadow-lg transition-transform delay-75 duration-300 hover:scale-105"
+        >
+          <img
+            src="https://github.com/Seh-Pankaj/Decentralized_Estate/raw/master/client/screenshots/image.png"
+            alt="project_image"
+            class="aspect-video rounded-t-md object-cover object-center"
+          />
+          <h3 class="mt-2 ml-2 font-bold">Decentralized Estate</h3>
+          <p class="ml-2 line-clamp-2 text-xs">
+            Capstone Project which uses blockchain technology and decentralized
+            IPFS storage.
+          </p>
+          <a
+            class="ml-2 underline"
+            href="https://github.com/Seh-Pankaj/Decentralized_Estate"
+            >Github Link</a
+          >
+        </div>
+        <div
+          class="rounded-md pb-2 shadow-lg transition-transform delay-75 duration-300 hover:scale-105"
+        >
+          <img
+            src="assets/project2.jpg"
+            alt="project2_image"
+            class="aspect-video rounded-t-md object-cover object-[-20px]"
+          />
+          <h3 class="mt-2 ml-2 font-bold">Autism Center</h3>
+          <p class="ml-2 text-xs">It's a react website for an autism center.</p>
+          <a
+            class="ml-2 underline"
+            href="https://miracle-activity-center-for-autism-r2rb316ni-seh-pankaj.vercel.app/"
+            >Link</a
+          >
+        </div>
+        <div
+          class="rounded-md pb-2 shadow-lg transition-transform delay-75 duration-300 hover:scale-105"
+        >
+          <img
+            src="assets/project3.jpg"
+            alt="project2_image"
+            class="aspect-video rounded-t-md object-cover object-left"
+          />
+          <h3 class="mt-2 ml-2 font-bold">Weather app</h3>
+          <p class="ml-2 line-clamp-2 text-xs">
+            It's a simple web app for LGTV. It has animated SVG icons for
+            displaying different weather conditions.
+          </p>
+          <a
+            class="ml-2 underline"
+            target="_blank"
+            href="https://github.com/Seh-Pankaj/weather_app_tv"
+            >Github Link</a
+          >
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="p-6">
+      <h1 class="my-4 font-serif text-4xl antialiased">Contact Me</h1>
+
+      <form
+        action="index.html"
+        method="post"
+        id="contact-form"
+        class="flex flex-col items-center space-y-2"
+      >
+        <div class="flex w-full space-x-2">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter Name"
+            class="w-[49%] rounded-lg border-2 border-gray-300 bg-white px-2 py-1 leading-12 outline-none required:border-red-400 focus:border-gray-400 lg:w-[24%] dark:bg-gray-500"
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Email"
+            class="w-[49%] rounded-lg border-2 border-gray-300 bg-white px-2 py-1 leading-12 outline-none required:border-red-400 focus:border-gray-400 lg:w-[24%] dark:bg-gray-500"
+          />
+        </div>
+        <div class="flex w-full">
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Enter message..."
+            rows="3"
+            class="w-full rounded-lg border-2 border-gray-300 bg-white px-2 py-1 leading-6 outline-none required:border-red-400 focus:border-gray-400 lg:w-1/2 dark:bg-gray-500"
+          ></textarea>
+        </div>
+
+        <div class="flex w-full">
+          <button
+            class="w-1/2 cursor-pointer rounded-lg bg-blue-300 py-2 font-semibold text-white/80 transition-colors hover:bg-blue-400"
+            form="contact-form"
+            type="reset"
+          >
+            Submit
+          </button>
+        </div>
+        <div class="flex w-full">
+          <div class="flex w-1/2 justify-around">
+            <a href="https://github.com/Seh-Pankaj" target="_blank"
+              ><i
+                class="fa-brands fa-square-github cursor-pointer text-5xl transition-transform hover:scale-105"
+              ></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/pankaj-sehrawat/"
+              target="_blank"
+              ><i
+                class="fa-brands fa-linkedin cursor-pointer text-5xl transition-transform hover:scale-105"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </form>
+    </section>
+    <footer class="max-h-48 bg-gray-300 p-6 dark:text-black">
+      <ul>
+        <li>Privacy Policy</li>
+        <li>Terms of Service</li>
+      </ul>
+      <p class="text-center">© 2025 Pankaj Sehrawat</p>
+    </footer>
+  </body>
+</html>
